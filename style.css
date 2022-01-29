@@ -12,26 +12,24 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
+  background: #0F1120;
 }
-
 .card {
   position: relative;
   width: 300px;
   height: 400px;
-  background: #fff;
   border-radius: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.502);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.185);
+  transform-style: preserve-3d;
 }
 
 .img-box {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -45px;
+  width: 130%;
   height: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -67,7 +65,7 @@ body {
 }
 
 .details h2 {
-  color: #444;
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   font-weight: 500;
 }
@@ -98,13 +96,33 @@ body {
   border-radius: 50%;
   background: transparent;
   font-size: 1.25em;
-  color: #444;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.145);
-  border-top: 1px solid rgba(0, 0, 0, 0.14);
-  transition: all 0.4s ease-in;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.145);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in;
 }
 
 .social li a:hover {
   background: #03a9f4;
   color: #fff;
+}
+
+#Circle1 {
+    position: absolute;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	background: linear-gradient(#f00, #f0f);
+    bottom: 450px;
+	left: -200px;
+}
+
+#Circle2 {
+    position: fixed;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	background: linear-gradient(#2196f3, #e91e63);
+    top: 450px;
+	right: -220px;
 }
